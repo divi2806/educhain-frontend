@@ -232,12 +232,14 @@ const Whitepaper: React.FC = () => {
               Whether you're a developer, institution, or potential user, there are 
               many ways to contribute to EduChain's mission.
             </p>
-            <a href="#waitlist">
-              <Button className="w-full sm:w-auto">
-                <span>Join Waitlist</span>
-                <ChevronRight className="ml-1 w-4 h-4" />
-              </Button>
-            </a>
+            <ScrollLink 
+              to="waitlist" 
+              smooth={true} 
+              duration={500} 
+              className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-purple-600 to-indigo-600 rounded-full text-white font-medium hover:from-purple-700 hover:to-indigo-700 transition-all duration-300 cursor-pointer"
+            >
+              Join the Waitlist
+            </ScrollLink>
           </div>
         </div>
       </div>
